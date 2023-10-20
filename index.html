@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Unit Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form>
+        <label for="Converter">From Converter</label>
+        <input type="number" name="Converter" id="myInputID" />
+
+        <label for="fromUnit">From</label>
+        <select name="fromUnit" id="fromValueID">
+          <option value="cm">CM</option>
+          <option value="m">M</option>
+          <option value="km">KM</option>
+        </select>
+
+        <label for="toUnit">To</label>
+        <select name="toUnit" id="toValueID">
+          <option value="cm">CM</option>
+          <option value="m">M</option>
+          <option value="km">KM</option>
+        </select>
+      </form>
+      <button onclick="unitConverter()">Convert</button>
+
+      <p id="displayValueID"></p>
+    </main>
+  </body>
+</html>
